@@ -1,0 +1,30 @@
+SQL 명령어 모음
+
+ DATE_FORMAT(CREATE_DATE, '%Y-%m-%d') AS CREATE_DATE : 날짜를 시간 제외하고 출력
+
+JOIN : 두 개 이상의 테이블을 서로 묶어서 하나의 결과 집합으로 만들어 내는 것
+
+SELECT <열 목록>
+FROM <첫 번째 테이블>
+    INNER JOIN <두 번째 테이블>
+    ON <조인될 조건>
+[WHERE 검색조건]
+
+
+ORDER BY <열> (ASC, DESC) : ASC - 오름차순, DESC - 내림차순
+
+GROUPY BY <열> : 열로 그룹화 짓는것
+Having <조건> : GROUP BY의 조건, WHERE과 같음
+
+COALESCE(TLNO, 'NONE') : 해당 열이 NULL인 경우 첫번째 인덱스 값을 출력함
+
+Limit N : N개만 출력
+
+COUNT : 개수 세는거
+
+AVG : 평균
+
+ROUND : 소수점 올림
+
+
+UNION ALL : 두개의 테이블 합쳐주는 것, SELECT 두개 쓸 수 있음
